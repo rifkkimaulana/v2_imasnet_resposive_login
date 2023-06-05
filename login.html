@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<link rel="shortcut icon" href="img/imasnet.png">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>LOGIN.IMASNET.ID</title>
+   <link rel="stylesheet" href="css/components.css">
+   <link rel="stylesheet" href="css/responsee.css">
+   <link rel="stylesheet" href="css/icons.css">
+   <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+   <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+   <!-- CUSTOM STYLE -->
+   <link rel="stylesheet" href="css/template-style.css">
+   <link rel="stylesheet" href="css/font.css">
+   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="js/template-scripts.js"></script>
+</head>
+
+<body class="size-1140">
+   <!-- TOP NAV WITH LOGO -->
+   <header>
+      <div id="topbar">
+
+      </div>
+      <nav>
+         <div class="line">
+            <div class="s-12 l-2">
+               <p class="logo"><strong>imasnet.id</p>
+            </div>
+            <div class="top-nav s-12 l-10">
+               <p class="nav-text">Menu</p>
+               <ul class="right">
+                  <li class="active-item"><a href="#carousel">LOGIN</a></li>
+                  <li><a onclick="window.location='https://laksa19.github.io/myqr';">LOGIN QR KODE</a></li>
+                  <li><a href="#services">tentang</a></li>
+                  <li><a href="#about-us">Kontak</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <section>
+
+      <!-- CAROUSEL -->
+      <div id="carousel">
+         <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item">
+               <img src="img/slider1.jpg" alt="">
+            </div>
+            <div class="item">
+               <img src="img/slider3.jpg" alt="">
+            </div>
+         </div>
+      </div>
+
+      <!-- FIRST BLOCK -->
+      <div id="first-block">
+         <div class="line">
+            <h1>LOGIN DISINI!</h1>
+            <p>Perhatikan tiap hurup besar dan kecilnya, karena akan sangat berpengaruh.</p>
+
+            <div class="margin">
+               <div class="s-12 m-12 l-4 margin-bottom right-align">
+               </div>
+               <div class="s-12 m-12 l-5">
+
+                  $(if chap-id)
+                  <form name="sendin" action="$(link-login-only)" method="post">
+                     <input type="hidden" name="username" />
+                     <input type="hidden" name="password" />
+                     <input type="hidden" name="dst" value="$(link-orig)" />
+                     <input type="hidden" name="popup" value="true" />
+                  </form>
+
+                  <script type="text/javascript" src="/md5.js"></script>
+                  <script type="text/javascript">
+
+                     function doLogin() {
+                        document.sendin.username.value = document.login.username.value;
+                        document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+                        document.sendin.submit();
+                        return false;
+                     }
+
+                  </script>
+                  $(endif)
+
+                  <form class="customform" name="login" action="$(link-login-only)" method="post" $(if chap-id)
+                     onSubmit="return doLogin()" $(endif)>
+                     <input type="hidden" name="dst" value="$(link-orig)" />
+                     <input type="hidden" name="popup" value="true" />
+
+
+                     <div class="s-12 m-12"><input name="username" placeholder="Username" value="$(username)"
+                           title="username" type="text" /></div>
+                     <div class="s-12 m-12"><input name="password" placeholder="Password" title="password"
+                           type="text" /></div>
+                     <input type="hidden" name="dst" value="$(link-orig)" />
+                     <input type="hidden" name="popup" value="true" />
+                     <div class="s-12 m-12"><button class="color-btn" type="submit">Login</button></div>
+                  </form>
+                  $(if trial == 'yes')Free trial available, <a style="color: #FF8080"
+                     href="$(link-login-only)?dst=$(link-orig-esc)&username=T-$(mac-esc)">click here</a>.$(endif)
+                  $(if error)<br />
+                  <div style="color: #FF8080; font-size: 9px">$(error)</div>$(endif)
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- SERVICES -->
+      <div id="services">
+         <div class="line">
+            <h2 class="section-title">TENTANG</h2>
+            <div class="margin">
+               <div class="s-12 m-6 l-4 margin-bottom">
+                  <i class="icon-node_link_shape"></i>
+                  <div class="service-text">
+                     <h3>KONEKSI UNLIMITED ?</h3>
+                     <p>Kita semua butuh internet yang unlimited, jadi gak perlu khawatir lagi kehabisan kuota internet.
+                     </p>
+                  </div>
+               </div>
+               <div class="s-12 m-6 l-4 margin-bottom">
+                  <i class="icon-soundcloud"></i>
+                  <div class="service-text">
+                     <h3>PAKET IURAN ?</h3>
+                     <p>Biaya untuk internet sehari-hari menjadi lebih terjangkau, untuk masyarakat indonesia cerdas.
+                     </p>
+                  </div>
+               </div>
+               <div class="s-12 m-12 l-4 margin-bottom">
+                  <i class="icon-random"></i>
+                  <div class="service-text">
+                     <h3>PARTISIFASI IMASNET.ID</h3>
+                     <p> Untuk kepentingan masyarakat indonesia terhadap teknologi internet.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- ABOUT US -->
+      <div id="about-us">
+         <div class="s-12 m-12 l-12 media-container">
+            <img src="img/imasnet.png" alt="">
+         </div>
+
+         <article class="s-12 m-12 l-6">
+            <br>
+            <p>
+            <h3>KONTAK CS</h3>
+            </p>
+            <div class="about-us-icons">
+               <p> EMAIL : <a style="color: #f7f5f5" href=" mail:cs@imasnet.id">cs@imasnet.id</a></p>
+               <p> SITUS WEB :</br><a style="color: #f7f5f5" href="http://internetmasyarakat.com">
+                     www.internetmasyarakat.com</a></br>
+                  <a style="color: #f7f5f5" href="http://imasnet.id">imasnet.id</a> </br>
+                  <a style="color: #f7f5f5" href="http://imasnet.online">imasnet.online</a>
+               </p>
+               <p></p></br>
+               <p> Copyright &copy; 2021 INTERNET UNTUK MASYARAKAT (IMASNET.ID)
+                  </br>
+                  powered by :
+                  <a style="color: #f7f5f5" href="http://rifkkimaulana.com">rifkkimaulana.com</a>
+               </p>
+            </div>
+         </article>
+      </div>
+
+      <script type="text/javascript">
+         document.login.username.focus();
+      </script>
+
+      <!--CHANNEL INTERGRAM-->
+      <script>
+         window.intergramId = "1457162798";
+         window.intergramCustomizations = {
+            titleClosed: 'live chat',
+            titleOpen: 'imasnet.id',
+            introMessage: 'Hallo, kami akan membalas pesan anda secepatnya, mohon maaf sampaikan apa yang dapat kami bantu?',
+            autoResponse: 'Terimkasih pesan anda sudah kami teruskan ke admin, tunggu admin membalas pesan anda.',
+            autoNoResponse: 'Kirimkan pesan anda beberapa saat lagi, ' +
+               'kami akan membalas pesan anda secepatnya.',
+            mainColor: "#E91E63", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+            alwaysUseFloatingButton: false // Use the mobile floating button also on large screens
+         };
+      </script>
+      <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+
+      <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function ($) {
+            var theme_slider = $("#owl-demo");
+            $("#owl-demo").owlCarousel({
+               navigation: false,
+               slideSpeed: 300,
+               paginationSpeed: 400,
+               autoPlay: 6000,
+               addClassActive: true,
+               // transitionStyle: "fade",
+               singleItem: true
+            });
+            $("#owl-demo2").owlCarousel({
+               slideSpeed: 300,
+               autoPlay: true,
+               navigation: true,
+               navigationText: ["&#xf007", "&#xf006"],
+               pagination: false,
+               singleItem: true
+            });
+
+            // Custom Navigation Events
+            $(".next-arrow").click(function () {
+               theme_slider.trigger('owl.next');
+            })
+            $(".prev-arrow").click(function () {
+               theme_slider.trigger('owl.prev');
+            })
+         }); 
+      </script>
+</body>
+
+</html>
